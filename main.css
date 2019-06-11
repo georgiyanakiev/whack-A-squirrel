@@ -1,4 +1,5 @@
 body {
+    background-color: rgba(255, 217, 0, 0.836);
     margin: 0;
     display: grid;
     height: 100vh;
@@ -8,8 +9,14 @@ body {
     grid-template: auto 512px auto / auto 360px auto
 }
 
+h1 {
+    position: relative;
+    top: 30px;
+    right: 200px;
+}
+
 #base {
-    background-color: #dbdf13;
+    background-color: #1bd124;
     grid-column-start: 2;
     grid-row-start: 2;
     display: grid;
@@ -57,7 +64,7 @@ div#level {
 
 #plot {
     display: grid;
-    grid-template-rows: auto 48px
+    grid-template-rows: auto 58px
 }
 
 #hole::after {
@@ -78,8 +85,8 @@ div#level {
 
 #mole {
     background: url(./iceAge.png) center bottom no-repeat;
-    background-size: 40%;
+    background-size: 50%;
     transform: translateY(60%);
-    transition: transform 0.3s;
+    transition: transform 0.5s;
     visibility: hidden;
 }

@@ -1,5 +1,8 @@
 //Rules 
 //Whack-a-squirrel as much as you can and when you done 50 points getting to next level 
+
+
+// info score 
 let info = {
         moles: '',
         score: 0,
@@ -7,21 +10,24 @@ let info = {
     },
     lastIndex = -1,
     times = 0;
+
+// onload
 onload = function() {
-    info.moles = this.document.querySelectorAll('#mole');
+    info.moles = this.document.querySelectorAll('#mole'); // 
     for (const mole of info.moles) {
         mole.addEventListener('click', clicked);
     }
     play();
 }
 
+//play
 function play() {
     randomize();
     times = 0;
-    setTimeout(play, (Math.random() * 700 + 300));
+    setTimeout(play, (Math.random() * 600 + 300));
 }
 
-
+//clicked 
 function clicked(e) {
     e = e || window.event;
     if (e.target.classList == 'active' && times === 0) {
@@ -32,7 +38,7 @@ function clicked(e) {
         document.getElementById('level').getElementsByTagName('span')[0].innerText = info.level
     }
 }
-
+// randomize
 function randomize() {
     var index = lastIndex;
     while (lastIndex == index) {
