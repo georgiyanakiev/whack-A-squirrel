@@ -1,5 +1,5 @@
 //Rules 
-//Whack-a-squirrel as much as you can and when you done 50 points getting to next level 
+//Whack-a-squirrel as much as you can and when you done 20 points getting to next level 
 
 
 // info score 
@@ -24,7 +24,7 @@ onload = function() {
 function play() {
     randomize();
     times = 0;
-    setTimeout(play, (Math.random() * 600 + 300));
+    setTimeout(play, (Math.random() * 800 + 600));
 }
 
 //clicked 
@@ -34,7 +34,7 @@ function clicked(e) {
         times++;
         info.score++;
         document.getElementById('score').getElementsByTagName('span')[0].innerText = info.score
-        info.level = (info.score / 50) | 0;
+        info.level = (info.score / 20) | 0;
         document.getElementById('level').getElementsByTagName('span')[0].innerText = info.level
     }
 }
