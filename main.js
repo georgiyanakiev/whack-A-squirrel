@@ -1,5 +1,11 @@
 //Rules 
 //Whack-a-squirrel as much as you can and when you done 20 points getting to next level 
+function promptMe() {
+    let user = prompt("What is your name?");
+    alert(user);
+}
+
+
 let info = {
         moles: '',
         score: 0,
