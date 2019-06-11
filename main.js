@@ -1,7 +1,14 @@
 //Rules 
 //Whack-a-squirrel as much as you can and when you done 20 points getting to next level 
+
+let startBtn = document.getElementById('startBtn');
+
 function startGame() {
     document.getElementById("start").innerHTML = " Game started! ";
+}
+
+function resetGame() {
+    document.getElementById("reset").innerHTML = "Game has been reset!"
 }
 
 // info score 
