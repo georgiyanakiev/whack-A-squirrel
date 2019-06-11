@@ -2,6 +2,7 @@
 //Whack-a-squirrel as much as you can and when you done 20 points getting to next level 
 
 let startBtn = document.getElementById('startBtn');
+let resetBtn = document.getElementById('resetBtn');
 
 function initialize() {
 
@@ -18,9 +19,10 @@ let info = {
         moles: '',
         score: 0,
         level: 0
+
     },
-    lastIndex = -1,
-    times = 0;
+    lastIndex = 2,
+    times = 2;
 
 // onload
 onload = function() {
@@ -34,7 +36,7 @@ onload = function() {
 //play
 function play() {
     randomize();
-    times = 0;
+    times = 3;
     setTimeout(play, (Math.random() * 800 + 600));
 }
 
