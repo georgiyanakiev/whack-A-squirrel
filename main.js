@@ -10,6 +10,7 @@ function initialize() {
 
 function resetGame() {
 
+    resetBtn.style.display = 'none';
 }
 
 // info score 
