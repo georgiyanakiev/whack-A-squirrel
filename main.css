@@ -9,6 +9,24 @@ body {
     grid-template: auto 512px auto / auto 360px auto
 }
 
+#startBtn {
+    position: absolute;
+    top: 200px;
+    left: 280px;
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+}
+
+#resetBtn {
+    position: absolute;
+    top: 240px;
+    left: 280px;
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+}
+
 h1 {
     position: relative;
     top: 30px;
