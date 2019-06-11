@@ -3,12 +3,13 @@
 
 let startBtn = document.getElementById('startBtn');
 
-function startGame() {
-    document.getElementById("start").innerHTML = " Game started! ";
+function initialize() {
+
+    startBtn.style.display = 'none';
 }
 
 function resetGame() {
-    document.getElementById("reset").innerHTML = "Game has been reset!"
+
 }
 
 // info score 
