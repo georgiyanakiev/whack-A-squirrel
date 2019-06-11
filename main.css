@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+    grid-template: auto 512px auto / auto 360px auto
+}
+
+#base {
+    background-color: #dbdf13;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-rows: 1fr 11fr
+}
+
+#base>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+#info>div {
+    display: grid;
+    align-content: center;
+    box-sizing: border-box;
+    justify-content: center;
+    background: rgb(15, 201, 185);
+    border: 5px solid #0abe0a;
+    grid-template-columns: 1fr 1fr
+}
+
+div#score {
+    border-right-width: 2px;
+}
+
+div#level {
+    border-left-width: 3px;
+}
+
+#info>div>div {
+    text-align: center;
+    display: grid;
+    align-content: center;
+    text-transform: uppercase;
+    color: seagreen;
+}
+
+#info>div>span {
+    text-align: right;
+    padding: 7px;
+    background-color: rgb(43, 101, 226);
+    color: rgb(182, 179, 18);
+}
+
+#plot {
+    display: grid;
+    grid-template-rows: auto 48px
+}
+
+#hole::after {
+    display: block;
+    background: url("./field.png") center 70% no-repeat;
+    content: '';
+    width: 100%;
+    background-size: contain;
+    height: 60px;
+    top: -25px;
+    position: relative;
+}
+
+.active {
+    visibility: visible !important;
+    transform: translateY(0) !important
+}
+
+#mole {
+    background: url(./iceAge.png) center bottom no-repeat;
+    background-size: 40%;
+    transform: translateY(60%);
+    transition: transform 0.3s;
+    visibility: hidden;
+}
