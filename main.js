@@ -1,26 +1,9 @@
 //Rules 
 //Whack-a-squirrel as much as you can and when you done 20 points getting to next level 
 
-// let startBtn = document.getElementById('startBtn');
-// let resetBtn = document.getElementById('resetBtn');
-
-// let playing = false;
-// let startButton;
 
 
-// function initialize() {
-//     startButton.destroy();
-//     ball.body.velocity.set(150, -150);
-//     playing = true;
-//     startBtn.style.display = 'none';
-// }
 
-// function resetGame() {
-
-//     resetBtn.style.display = 'none';
-// }
-
-// info score 
 let info = {
         moles: '',
         score: 0,
@@ -59,7 +42,7 @@ function clicked(e) {
 }
 // randomize
 function randomize() {
-    var index = lastIndex;
+    let index = lastIndex;
     while (lastIndex == index) {
         index = (Math.random() * 6) | 0;
     }
