@@ -1,3 +1,5 @@
+//Rules 
+//Whack-a-squirrel as much as you can and when you done 50 points getting to next level 
 let info = {
         moles: '',
         score: 0,
