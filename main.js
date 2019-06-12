@@ -14,17 +14,12 @@ let info = {
 
 // onload function
 onload = function() {
-    info.moles = this.document.querySelectorAll('#mole'); // 
-    for (const mole of info.moles) {
-        mole.addEventListener('click', clicked);
+        info.moles = this.document.querySelectorAll('#mole'); // 
+        for (const mole of info.moles) {
+            mole.addEventListener('click', clicked);
+        }
     }
-
-
-}
-
-
-
-//play
+    //play
 function play() {
     randomize();
     times = 0;

@@ -82,7 +82,7 @@ div#level {
     content: '';
     width: 100%;
     background-size: contain;
-    height: 60px;
+    height: 80px;
     top: -25px;
     position: relative;
 }
