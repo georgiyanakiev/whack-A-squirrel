@@ -1,9 +1,5 @@
 //Rules 
 //Whack-a-squirrel as much as you can and when you done 20 points getting to next level 
-function promptMe() {
-    let user = prompt("What is your name?");
-    alert(user);
-}
 
 
 let info = {
@@ -15,20 +11,27 @@ let info = {
     lastIndex = -1,
     times = 0;
 
-// onload
+
+
+// onload function
 onload = function() {
     info.moles = this.document.querySelectorAll('#mole'); // 
     for (const mole of info.moles) {
         mole.addEventListener('click', clicked);
     }
     play();
+
 }
+
 
 //play
 function play() {
     randomize();
     times = 0;
+
     setTimeout(play, (Math.random() * 800 + 600));
+
+
 }
 
 //clicked 
