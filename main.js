@@ -11,7 +11,8 @@ let info = {
     lastIndex = -1,
     times = 0;
 
-
+startGame();
+document.getElementById("startBtn").onclick = play;
 
 // onload function
 onload = function() {

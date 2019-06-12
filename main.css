@@ -1,27 +1,18 @@
 body {
     background-color: rgba(255, 217, 0, 0.836);
-    margin: 0;
+    margin: 300px;
     display: grid;
-    height: 100vh;
+    height: 400px;
     align-content: center;
     justify-content: center;
     font-family: 'Varela Round', sans-serif;
-    grid-template: auto 512px auto / auto 360px auto
+    grid-template: auto 612px auto / auto 460px auto
 }
 
 #startBtn {
     position: absolute;
-    top: 200px;
-    left: 280px;
-    width: 200px;
-    height: 20px;
-    font-size: 15px;
-}
-
-#resetBtn {
-    position: absolute;
-    top: 240px;
-    left: 280px;
+    top: 260px;
+    left: 420px;
     width: 200px;
     height: 20px;
     font-size: 15px;
